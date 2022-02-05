@@ -1,0 +1,57 @@
+@(freq: String, mean: String, median: String, mode: String, range: String, stdDev: String, variance: String)
+
+@main("Welcome to Play") {
+  @topNav("Welcome to Our Survey tool!")
+  <h4 style="text-align: center;">
+    The table below shows some statistical data on the age ranges
+    <br>
+    of people that had responded to a survey concerning the
+    <br>
+    <b>attitudes, beliefs and feeling of people regarding Covid 19!</b>
+  </h4>
+  <br>
+  <table class="center">
+    <tr>
+      <th>Data</th>
+      <th>Values</th>
+    </tr>
+    <tr>
+      <td>Frequency</td>
+      <td>@freq</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>@mean</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>@median</td>
+    </tr>
+    <tr>
+      <td>Mode</td>
+      <td>@mode</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>@range</td>
+    </tr>
+    <tr>
+      <td>Standard Deviation</td>
+      <td>@stdDev</td>
+    </tr>
+    <tr>
+    <td>Variance</td>
+    <td>@variance</td>
+  </tr>
+  </table>
+  <br>
+  <h4 style="text-align: center">Below is found the graph showing the statistics of the the
+    <br>age ranges of people that answered the questionnaire</h4>
+  <img alt="age graph" src="/assets/images/age_graph.png" class="graph"/>
+  <br>
+  <div class="btnCenter">
+    <button type="button" onclick="print()">Print or generate PDF</button>
+    <br>
+  </div>
+
+}
